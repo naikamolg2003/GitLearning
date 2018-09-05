@@ -1,4 +1,4 @@
-﻿About the Tutorial
+About the Tutorial
 Perl is a programming language developed by Larry Wall, especially designed for text
 processing. It stands for Practical Extraction and Report Language. It runs on a
 variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
@@ -15,13 +15,48 @@ All the content and graphics published in this e-book are the property of Tutori
 Pvt. Ltd. The user of this e-book is prohibited to reuse, retain, copy, distribute or republish
 any contents or a part of contents of this e-book in any manner without written consent
 of the publisher.
-Perl provides a number of useful functions to add and remove elements in an array. You
-may have a question what is a function? So far you have used print function to print
-various values. Similarly there are various other functions or sometime called subroutines,
-which can be used for various other functionalities.
-S.N. Types and Description
-1 push @ARRAY, LIST
-Pushes the values of the list onto the end of the array.We strive to update the contents of our website and tutorials as timely and as precisely as
+The second line uses the qw// operator, which returns a list of strings, separating the
+delimited string by white space. In this example, this leads to a four-element array; the
+first element is 'this' and last (fourth) is 'array'. This means that you can use different lines
+as follows:
+@days = qw/Monday
+Tuesday
+...
+Sunday/;
+You can also populate an array by assigning each value individually as follows:
+$array[0] = 'Monday';
+...
+$array[6] = 'Sunday';
+Accessing Array Elements
+When accessing individual elements from an array, you must prefix the variable with a
+dollar sign ($) and then append the element index within the square brackets after the
+name of the variable. For example:
+#!/usr/bin/perl
+@days = qw/Mon Tue Wed Thu Fri Sat Sun/;
+print "$days[0]\n";
+print "$days[1]\n";
+print "$days[2]\n";
+print "$days[6]\n";
+print "$days[-1]\n";
+print "$days[-7]\n";
+Perl
+30
+This will produce the following result:
+Mon
+Tue
+Wed
+Sun
+Sun
+Mon
+Array indices start from zero, so to access the first element you need to give 0 as indices.
+You can also give a negative index, in which case you select the element from the end,
+rather than the beginning, of the array. This means the following:
+print $days[-1]; # outputs Sun
+print $days[-7]; # outputs Mon
+Sequential Number Arrays
+Perl offers a shortcut for sequential numbers and letters. Rather than typing out each
+element when counting to 100 for example, we can do something like as follows:
+We strive to update the contents of our website and tutorials as timely and as precisely as
 possible, however, the contents may contain inaccuracies or errors. Tutorials Point (I) Pvt.
 Ltd. provides no guarantee regarding the accuracy, timeliness or completeness of our
 website or its contents including this tutorial. If you discover any errors on our website or
