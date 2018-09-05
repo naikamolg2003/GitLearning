@@ -1,4 +1,4 @@
-About the Tutorial
+﻿About the Tutorial
 Perl is a programming language developed by Larry Wall, especially designed for text
 processing. It stands for Practical Extraction and Report Language. It runs on a
 variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
@@ -15,7 +15,13 @@ All the content and graphics published in this e-book are the property of Tutori
 Pvt. Ltd. The user of this e-book is prohibited to reuse, retain, copy, distribute or republish
 any contents or a part of contents of this e-book in any manner without written consent
 of the publisher.
-We strive to update the contents of our website and tutorials as timely and as precisely as
+Perl provides a number of useful functions to add and remove elements in an array. You
+may have a question what is a function? So far you have used print function to print
+various values. Similarly there are various other functions or sometime called subroutines,
+which can be used for various other functionalities.
+S.N. Types and Description
+1 push @ARRAY, LIST
+Pushes the values of the list onto the end of the array.We strive to update the contents of our website and tutorials as timely and as precisely as
 possible, however, the contents may contain inaccuracies or errors. Tutorials Point (I) Pvt.
 Ltd. provides no guarantee regarding the accuracy, timeliness or completeness of our
 website or its contents including this tutorial. If you discover any errors on our website or
